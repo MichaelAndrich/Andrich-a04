@@ -5,27 +5,34 @@
 
 package baseline;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class solution42 {
-    // create scanner to read input
-    public void readFile(...){
-        Scanner sc = new Scanner();
 
-        // create a loop to read input.txt file with CSV format
-        while(sc.hasNext()){
+    public void formatFile(String filename){
+        try {
+            // scan in file
+            File file = new File(filename);
+            Scanner sc = new Scanner(file);
 
-            // split the string input
-            String[] temp = n.split(",");
-            // print out with format
-            System.out.printf(...);
+            // create loop to read and parse with ,
+            while(sc.hasNext()) {
+                String s = sc.nextLine();
+                String[] temp = s.split(",");
+                // format output
+                System.out.printf("%-10s%-10s%-10s%n", temp[0], temp[1], temp[2]);
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println("Error: File not found");
         }
 
-
-
-        // print out final table
-        public void main(String[] args){
-
-        }
+    }
+public static void main(String[] args){
+        solution42 Employee = new solution42();
+        System.out.printf("%-10s%-10s%-10s%n", "Last", "First", "Salary");
+        System.out.printf("---------------------------");
+        Employee.formatFile("exercise42_input.txt");
     }
 }

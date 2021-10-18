@@ -1,7 +1,10 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
+class solution44 {
+String product
+BufferedReader()
+}
 
 
 @enduml

@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -17,7 +16,7 @@ import java.util.Scanner;
 
 public class solution41 {
 
-    class fileNames{
+     class fileNames{
         public fileNames(Scanner inputFile, List<String> names) {
         }
 
@@ -34,8 +33,10 @@ public class solution41 {
 
     class printOutput {
         // create an output file named exercise41_output.txt
-        public void printOutput(List<String> names) throws IOException {
+        public printOutput(List<String> names) throws IOException {
             FileWriter output = new FileWriter("exercise41_output.txt");
+
+            output.write("Total of " +names.size() + " names\n");
             // format the output file
             output.write("-----------\n");
 
@@ -58,7 +59,7 @@ public class solution41 {
         inputFile.close();
 
         try {
-            printOutput(names);
+            new printOutput(names);
         }
         catch (Exception e) {
             System.out.println(e);

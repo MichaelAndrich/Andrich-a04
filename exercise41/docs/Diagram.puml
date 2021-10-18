@@ -8,13 +8,22 @@ solution41 <|-- fileName
 solution41 <|-- printOutput
 
 class fileName {
-
+List names
+names.add()
 }
 
+class printOutput {
+List names
+FileWriter()
+output.write()
+output.close()
+}
 
 class solution41 {
-Object[] elementData
-size()
+List names
+fileNames()
+inputFile()
+printOutput()
 }
 
 

@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+solution45 <-- writeFile
+solution45 <-- readFile
+
+
+class writeFile {
+String name
+List Name[]
+writeFile()
+}
+
+class readFile {
+List Name[]
+readfile()
+}
+
+class solution45 {
+main()
+}
+
+
+@enduml

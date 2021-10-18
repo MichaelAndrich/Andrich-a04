@@ -1,7 +1,24 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
+solution43 <-- websiteGenerator
+
+class solution43 {
+String siteName
+String author
+String inJS
+String inCSS
+websiteGenerator()
+}
+
+class websiteGenerator{
+String siteName
+String author
+createWebsite()
+createJSFolder()
+createCSSFolder()
+createHTML()
+}
 
 
 @enduml
